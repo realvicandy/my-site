@@ -1,0 +1,197 @@
+/* text-align is used to position elements, this only works with inline-block and block elements
+
+  To change the text color use color
+
+  To change font use font-family
+
+  Using fonts it depends if that device the user is viewing your page on has the font installed on it
+  but if you want your page to have the same font no matter what then you can use font impedding, the
+  bad thing though is youre sacraficing some load time */
+body {
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  /*this will center all content on the webpage*/
+  font-family: 'Merriweather', serif;
+}
+
+/* If you want a dynamic font size, meaning the size will adjust with the user's settings and devices then
+  you want to use percentages instead of px. 1% = 16px so whatever you want your px size to be let's say 90
+  for example do this math: 90/16=562.5%
+
+  Another way to do a dynamic font size is using the em measurement
+  1em = 16px so the math for em is 90/16=5.625em
+
+  So 16px = 100% or 1em
+
+  Remember that em and % inherit previously specified em and %'s from the parents so if someone already
+  has some em sizing on the body or something that will go ontop of anything else you add on the wbesite
+
+  To avoid this you can use the rem measurement which is the root em, meaning it ignores all parent elements
+  and bases it's size off the root measuremnt so 5rem will always = 5rem this is the best practice */
+h1 {
+  color: #C2DED1;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+}
+
+h2 {
+  color: #C2DED1;
+  font-family: 'Montserrat';
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+h3 {
+  color: #354259;
+  font-family: 'Montserrat';
+}
+
+a {
+  color: #354259;
+}
+
+a:hover {
+  color: white;
+}
+
+hr{
+  border-style: none;
+  border-top: 5px dotted #D3D3D3;
+  width: 4%;
+}
+
+p {
+  line-height: 2;
+}
+
+.top-container {
+  background-color: #354259;
+  color: #FAF9F6;
+  position: relative;
+  padding-top: 100px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 250px;
+  top: 50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px
+}
+
+.profile {
+  margin: 70px auto 100px auto;
+}
+
+.profile-img {
+  height: auto;
+  width: 25%;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+.skills {
+  margin: 100px auto 100px auto;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.research-img {
+  height: auto;
+  width: 25%;
+  max-width: 540px;
+  max-height: 540px;
+  float: left;
+  margin-right: 30px;
+}
+
+.family-img {
+  height: auto;
+  width: 25%;
+  max-width: 540px;
+  max-height: 540px;
+  float: right; /*Only use float when really nessesary, in this case this is the only way to get our desired outcome*/
+  margin-left: 30px;
+}
+
+.skill-row-text-right {
+  text-align: right;
+}
+
+.bottom-container {
+ padding: 50px 0px 20px 0px;
+ background-color: #354259;
+ color: #C2DED1;
+}
+
+.footer-link {
+  color: #C2DED1;
+  margin: 20px;
+  text-decoration: none;
+}
+
+.foot-h3 {
+  color: #C2DED1;
+}
+
+.foot-p-1 {
+  margin-bottom: 50px;
+  width: 40%;
+  margin: 30px auto 50px auto;
+}
+
+.footer-p-2 {
+  margin: 50px auto auto;
+  font-size: 0.75rem;
+  color: white;
+}
+
+.contact-me {
+  margin: 100px auto 100px auto;
+}
+/*
+CONTACT ME BUTTON PROPERTIES
+*/
+.btn {
+  background: #7491c2;
+  background-image: -webkit-linear-gradient(top, #7491c2, #354259);
+  background-image: -moz-linear-gradient(top, #7491c2, #354259);
+  background-image: -ms-linear-gradient(top, #7491c2, #354259);
+  background-image: -o-linear-gradient(top, #7491c2, #354259);
+  background-image: linear-gradient(to bottom, #7491c2, #354259);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #354259;
+  background-image: -webkit-linear-gradient(top, #354259, #7491c2);
+  background-image: -moz-linear-gradient(top, #354259, #7491c2);
+  background-image: -ms-linear-gradient(top, #354259, #7491c2);
+  background-image: -o-linear-gradient(top, #354259, #7491c2);
+  background-image: linear-gradient(to bottom, #354259, #7491c2);
+  text-decoration: none;
+}
+/*
+CONTACT ME BUTTON PROPERTIES
+*/
